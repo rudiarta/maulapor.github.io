@@ -525,7 +525,7 @@
             <div class="alert alert-info alert-dismissable">
               <a class="panel-close close" data-dismiss="alert">×</a>
               <i class="fa fa-coffee"></i>
-              <b>Update Event </b>terbaru <b>disini (coming soon)</b>
+              <b>Update Pengaduan </b>terbaru <b>disini (coming soon)</b>
             </div>
             <form method="POST" action="login/control/tambahEvent" enctype="multipart/form-data" class="form-horizontal">
              <div class="form-group">
