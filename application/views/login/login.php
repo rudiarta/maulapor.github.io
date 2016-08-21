@@ -550,7 +550,7 @@
             </div>
 
             <div class="col-md-8">
-             <input type="submit" class="btn btn-primary" value="Update Event Terbaru">
+             <input type="submit" class="btn btn-primary" value="Update Pengaduan Terbaru">
            </div>
            </form>
          </div>
