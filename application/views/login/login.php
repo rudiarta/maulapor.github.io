@@ -543,7 +543,7 @@
             </div>
 
             <div class="form-group">
-              <label class="col-md-3 control-label">Tambahkan Foto Event:</label>
+              <label class="col-md-3 control-label">Tambahkan Foto Pengaduan:</label>
               <div class="col-md-8">
                 <input id="input-dim-1" name="foto" type="file" multiple class="file-loading" accept="image/*">
               </div>
