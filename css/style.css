@@ -1,0 +1,168 @@
+body {
+  min-height: 1000px; 
+  position: relative;
+}
+#text_slider{
+	width: 100%;
+}
+#text_slider div{
+	position: absolute;
+	margin-left: 50px;
+}
+#text_slider p{
+	font-size: 50px;
+}
+h2{
+	font-family: verdana;
+	font-size: 30px;
+}
+#p{
+	text-align: left;
+  padding: 10px;  
+}
+#h2{
+	font-size: 20px;
+  text-align: center;
+	font-family: verdana;
+}
+h3 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: verdana;
+
+}
+.row {
+  margin-bottom: 0px;
+}
+
+.row .row {
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  text-align: center;
+  padding-top: 10px;
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+  border-top-style: none;
+  border-bottom-style: none;
+}
+#font{
+	font-size: 20px;
+	font-family: verdana;
+	color:#00b8d4;
+}
+  .affix {;
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+ 
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+  .col-md-3 .jumbotron:hover{
+  	box-shadow: 10px 10px 6px rgba(35, 173, 278, 1);
+  }
+  .btn:hover{
+    box-shadow: 0 0 10px rgba(35, 173, 278, 1);
+  }
+  .list-group-item{
+    padding: 20px 0px 20px 0px;
+    margin-top: 10px;    
+  }
+  .tab-content{
+    padding: 20px;
+  }
+  .font h3{
+    font-size:18px;
+  }
+  .font p{
+   
+    text-indent: 20px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .col-xs-12.col-sm-3{
+    border: none;
+  }
+  .col-xs-12.col-sm-4{
+     border: none;
+     color: #fff;
+     margin-top: 0px;
+     padding: 0px;
+  }
+  .col-sm-4 h3{
+    font-size: 20px;
+    text-align: left;
+  }
+  .col-sm-4 p{
+    font-size: 15px;
+    text-align: left;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .list-group-item:hover{
+    box-shadow: 0 0 1px rgba(1, 1, 1, 1); 
+  }
+
+.demo-2 {
+    position:relative;
+    height: 440px;
+    overflow:hidden;
+    background-color:#008080;
+}
+.demo-2 p,.demo-2 h2 {
+    color:#fff;
+    padding:10px;    
+    top:5px;
+    position:relative
+}
+.demo-2 p {
+    font-family:'Lato';
+    font-size:12px;
+    line-height:18px;
+    margin:0
+}
+.demo-2 h2 {
+    font-size:20px;
+    line-height:24px;
+    margin:0;
+    font-family:'Lato'
+}
+.effect img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+.effect img.top:hover {
+    bottom:-120px;
+    padding-top:100px
+}
+h2.zero {
+  font-size: 25px;
+    margin:0;
+    padding:0;
+}
+p.zero{
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+.col-xs-12.col-md-4 {
+  border: none;
+}
+.col-xs-12.col-sm-4 a{
+  color:black;
+}
+.btn[role=button]{
+  margin-left: 70px;
+}
