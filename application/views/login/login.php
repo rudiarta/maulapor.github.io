@@ -529,14 +529,14 @@
             </div>
             <form method="POST" action="login/control/tambahEvent" enctype="multipart/form-data" class="form-horizontal">
              <div class="form-group">
-              <label class="col-md-3 control-label">Judul Event :</label>
+              <label class="col-md-3 control-label">Judul Pengaduan :</label>
               <div class="col-md-8">
                 <input name="judul" class="form-control" type="text" value="">
               </div>
             </div>
 
             <div class="form-group">
-              <label class="col-md-3 control-label">Deskripsi Event :</label>
+              <label class="col-md-3 control-label">Deskripsi Pengaduan :</label>
               <div class="col-md-8">
                 <textarea name="deskripsi" class="form-control" rows="5" id="comment"></textarea>
               </div>
