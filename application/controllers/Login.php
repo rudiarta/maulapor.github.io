@@ -357,7 +357,7 @@ class Login extends CI_Controller {
 				echo"<script>window.alert('Password Lama Anda salah');history.go(-1)</script>";
 			}
 		}
-		elseif($act=='tambahEvent'){
+		elseif($act=='tambahPengaduan'){
 			echo "ss";
 		}
 		else {

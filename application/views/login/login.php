@@ -527,7 +527,7 @@
               <i class="fa fa-coffee"></i>
               <b>Update Pengaduan </b>terbaru <b>disini (coming soon)</b>
             </div>
-            <form method="POST" action="login/control/tambahEvent" enctype="multipart/form-data" class="form-horizontal">
+            <form method="POST" action="login/control/tambahPengaduan" enctype="multipart/form-data" class="form-horizontal">
              <div class="form-group">
               <label class="col-md-3 control-label">Judul Pengaduan :</label>
               <div class="col-md-8">
