@@ -362,10 +362,10 @@ CREATE TABLE IF NOT EXISTS `item` (
   KEY `FK_barang_kategori_barang` (`id_categori`),
   KEY `id_kabupaten` (`id_location`),
   KEY `id_city` (`id_city`),
+  CONSTRAINT `id_user_fk` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`),
   CONSTRAINT `FK_barang_kabupaten` FOREIGN KEY (`id_location`) REFERENCES `location` (`id`),
   CONSTRAINT `FK_barang_kategori_barang` FOREIGN KEY (`id_categori`) REFERENCES `item_category` (`id`),
-  CONSTRAINT `FK_item_city` FOREIGN KEY (`id_city`) REFERENCES `city` (`id`),
-  CONSTRAINT `id_user_fk` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `FK_item_city` FOREIGN KEY (`id_city`) REFERENCES `city` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=latin1;
 
 -- Dumping data for table maulapor.item: ~4 rows (approximately)
@@ -500,9 +500,9 @@ CREATE TABLE IF NOT EXISTS `report` (
   KEY `id_penemu` (`id_found`),
   KEY `id_kehilangan` (`id_lost`),
   KEY `id_barang` (`id_item`),
-  CONSTRAINT `FK_laporan_penemuan_barang` FOREIGN KEY (`id_item`) REFERENCES `item` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `FK_laporan_penemuan_user` FOREIGN KEY (`id_found`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `FK_laporan_penemuan_user_2` FOREIGN KEY (`id_lost`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `FK_laporan_penemuan_barang` FOREIGN KEY (`id_item`) REFERENCES `item` (`id`),
+  CONSTRAINT `FK_laporan_penemuan_user` FOREIGN KEY (`id_found`) REFERENCES `user` (`id`),
+  CONSTRAINT `FK_laporan_penemuan_user_2` FOREIGN KEY (`id_lost`) REFERENCES `user` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- Dumping data for table maulapor.report: ~0 rows (approximately)
@@ -527,19 +527,21 @@ CREATE TABLE IF NOT EXISTS `user` (
   `id_card` varchar(25) NOT NULL,
   `card_type` varchar(25) NOT NULL,
   `active` char(2) NOT NULL DEFAULT 'N',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
 
--- Dumping data for table maulapor.user: ~7 rows (approximately)
+-- Dumping data for table maulapor.user: ~6 rows (approximately)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 REPLACE INTO `user` (`id`, `name`, `contact`, `address`, `password`, `username`, `email`, `picture`, `born_place`, `born_date`, `status`, `gender`, `id_card`, `card_type`, `active`) VALUES
 	(2, 'Rudi Arta Rahardian', '08981706583', 'kaliurang km 8.79', '9d12fac9d8258cbfd0168f78c3aa8c26', 'rudiarta', 'rudi@gmail.com', 'a9d14a41329b5299ed2a71e01de90b8c.jpg', 'Balikpapan', '1996-06-10', 'mahasiswa', 'L', '008982221', 'KTM', 'Y'),
-	(3, 'kiki parah tull', '08123', 'kaliurang km 8.7 tesss', '5c806bc4d0b60480470e77b3273e9e79', 'kiki27', 'rudi@gmail.com', '77ede3deaf864c35e32031d763ffd18c.jpg', 'Balikpapan', '1996-06-10', 'karyawan', 'L', '008982221675', 'KTM', 'Y'),
+	(3, 'kiki parah tull', '08123', 'kaliurang km 8.7 tesss', '5c806bc4d0b60480470e77b3273e9e79', 'kiki27', 'rmudi@gmail.com', '77ede3deaf864c35e32031d763ffd18c.jpg', 'Balikpapan', '1996-06-10', 'karyawan', 'L', '008982221675', 'KTM', 'Y'),
 	(9, '', '123', '', '84fe7f77b735849e42f70f037d7f9a68', 'arta', 'asd@gmail.com', '', '', '0000-00-00', '', '', '', '', 'Y'),
 	(10, 'yudistira arsya yudha', '082393168322', 'jakal km13', 'fe1eee391afb7567ff222f5409eaad89', 'yudis', 'yudistira_kaka8322@gmail.com', '09f46ed391c0a2eac70f705612c3dec9.png', 'jambi', '0000-00-00', 'menikah', 'L', '', '', 'Y'),
-	(11, '', '123', '', 'ad57484016654da87125db86f4227ea3', 'asd', 'rudiarta321@gmail.com', '', '', '0000-00-00', '', '', '', '', 'N'),
+	(11, '', '123', '', 'ad57484016654da87125db86f4227ea3', 'kk', 'rudiarta321@gmail.com', '', '', '0000-00-00', '', '', '', '', 'N'),
 	(12, '', '123123123', '', '76d80224611fc919a5d54f0ff9fba446', 'asd', 'rudi.arta@ymail.com', '', '', '0000-00-00', '', '', '', '', 'N'),
-	(13, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', '', '', '', '', '0000-00-00', '', '', '', '', 'N');
+	(29, 'kiki parah tull', '08123', 'kaliurang km 8.7 tesss', '5c806bc4d0b60480470e77b3273e9e79', 'kiki27m', 'rmudi@gmail.comm', '77ede3deaf864c35e32031d763ffd18c.jpg', 'Balikpapan', '1996-06-10', 'karyawan', 'L', '008982221675', 'KTM', 'Y');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
