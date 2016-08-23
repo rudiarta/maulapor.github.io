@@ -23,7 +23,6 @@ class Lapor extends CI_Controller {
 		parent::__construct();
 
 		$this->load->model('m_item');
-		$this->load->model('m_article');
 		$this->load->library('session');
 		$this->load->helper('cookie');
 	}
