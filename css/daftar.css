@@ -1,0 +1,28 @@
+input[type=text]:focus {     		
+     outline: 0 none;     
+     border: 0 none;
+     letter-spacing:1px;
+}
+.ui-main{
+	font-size:10px;
+	color: red;
+}
+.ui-header{
+	font-family:verdana;
+	font-size:12px;
+	color:red;
+}
+.ui-header h1{
+	background-color:#b71c1c;	
+	color:white;
+}		
+
+ ul.ui-nodisc-icon #icon:after {
+    background-color: blue;    
+}
+a{
+	margin-left: 10px;
+}
+.col-md-4{
+	text-align:center;
+}

@@ -1,0 +1,62 @@
+html, body{
+	background-color:#fafafa ;
+}
+.jumbotron{
+	height:20px;	
+	padding-top:20px;
+	background-color:white;
+	border-bottom:3px solid #dd2c00;
+	font-family:rockwell;
+	letter-spacing:2px;
+	color:#dd2c00 ;
+}
+.jumbotron h3{		
+	letter-spacing:2px;
+	margin-top:0;
+}
+.col-md-2#edit{
+	padding-top:10px;
+}
+
+.col-md-10#edit{
+	padding-top:10px;
+}
+li a{
+	color:black;
+	font-family:rockwell;
+	font-size:17px;
+}	
+li a.active{
+	border-bottom:3px solid #dd2c00;
+}
+li a:hover{
+	color:black;
+}
+th a{
+	color:blue; 
+	text-decoration:underline;
+}
+th a:hover{
+	letter-spacing:3px;	
+  -webkit-transition: all 1000ms ease-out;
+  -moz-transition: all 1000ms ease-out;
+  -o-transition: all 1000ms ease-out;
+  -ms-transition: all 1000ms ease-out; 
+  transition: all 1000ms ease-out; 
+}
+.form-group input{
+	outline:none;
+	width:30%;
+}
+.form-group{
+	width:100%;
+}
+input{
+	border:none;
+	border-bottom:1px solid #e0e0e0;
+	padding-left:10px;
+	letter-spacing:2px;
+}
+textarea{
+	border:1px solid red;	
+}

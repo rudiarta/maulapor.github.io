@@ -21,7 +21,7 @@ input[type=search] {
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: url('../pic/system/s2.png');
+    background-image: url('pic/s2.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;

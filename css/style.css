@@ -2,15 +2,34 @@ body {
   min-height: 1000px; 
   position: relative;
 }
-#text_slider{
-	width: 100%;
+.dropdown:hover .dropdown-menu {
+  background-color: transparent;  
+  display: block;  
 }
-#text_slider div{
-	position: absolute;
-	margin-left: 50px;
+.navbar-nav li a{
+  font-size:17px;
+  font-weight:600;
+  color:white;
+  font-family:candara;
 }
-#text_slider p{
-	font-size: 50px;
+a.navbar-brand{
+  color:white;  
+  font-size:40px;
+  color: #e53935;
+  padding-top:11px;  
+  font-weight:600;
+}
+.navbar-nav li a:hover{
+  background-color:transparent;
+  color:white;
+  border:none;
+  border-bottom:1px solid white;
+  letter-spacing:2px;
+  -webkit-transition: all 1000ms ease-out;
+  -moz-transition: all 1000ms ease-out;
+  -o-transition: all 1000ms ease-out;
+  -ms-transition: all 1000ms ease-out; 
+  transition: all 1000ms ease-out; 
 }
 h2{
 	font-family: verdana;
@@ -29,14 +48,38 @@ h3 {
   margin-top: 30px;
   text-align: center;
   font-family: verdana;
-
 }
-.row {
-  margin-bottom: 0px;
+div .col-md-4{
+  font-weight:600;
+  font-size:65px;
+  letter-spacing:1px;  
+  padding: 0;    
+  background-color:#1976d2;
 }
-
-.row .row {
-  margin-bottom: 0;
+.jml#go{
+  padding-top:20px;
+  background-color:#42a5f5;
+  height:260px;
+  color:white;
+}
+.info1#go{
+ background-color:#1976d2; 
+}
+.jml{    
+  height:250px;
+  color:white;  
+  width:100%;  
+  padding-top:70px;
+}
+.info1{    
+  font-family:calibri;
+  background-color:#42a5f5;
+  margin-left:33%;
+  padding-top:5px;  
+  width:33%;
+  font-size:20px;  
+  height:40px;  
+  color:white;
 }
 [class*="col-"] {
   text-align: center;
@@ -51,97 +94,94 @@ h3 {
 	font-family: verdana;
 	color:#00b8d4;
 }
-  .affix {;
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
+.affix {;
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+}
+.col-md-3 .jumbotron:hover{
+	box-shadow: 10px 10px 6px rgba(35, 173, 278, 1);
+}
+.btn:hover{
+  box-shadow: 0 0 10px rgba(35, 173, 278, 1);
+}
+.list-group-item{
+  padding: 20px 0px 20px 0px;
+  margin-top: 10px;    
+}
+.tab-content{
+  padding: 20px;
+}
+.font h3{
+  font-size:18px;
+}
+.font p{
  
-  .affix ~ .container-fluid {
-     position: relative;
-     top: 50px;
-  }
-  .col-md-3 .jumbotron:hover{
-  	box-shadow: 10px 10px 6px rgba(35, 173, 278, 1);
-  }
-  .btn:hover{
-    box-shadow: 0 0 10px rgba(35, 173, 278, 1);
-  }
-  .list-group-item{
-    padding: 20px 0px 20px 0px;
-    margin-top: 10px;    
-  }
-  .tab-content{
-    padding: 20px;
-  }
-  .font h3{
-    font-size:18px;
-  }
-  .font p{
-   
-    text-indent: 20px;
-    padding: 20px;
-    font-size: 15px;
-    text-align: justify;
-  }
-  .col-xs-12.col-sm-3{
-    border: none;
-  }
-  .col-xs-12.col-sm-4{
-     border: none;
-     color: #fff;
-     margin-top: 0px;
-     padding: 0px;
-  }
-  .col-sm-4 h3{
-    font-size: 20px;
-    text-align: left;
-  }
-  .col-sm-4 p{
-    font-size: 15px;
-    text-align: left;
-  }
-  a:hover{
-    text-decoration: none;
-  }
-  .list-group-item:hover{
-    box-shadow: 0 0 1px rgba(1, 1, 1, 1); 
-  }
+  text-indent: 20px;
+  padding: 20px;
+  font-size: 15px;
+  text-align: justify;
+}
+.col-xs-12.col-sm-3{
+  border: none;
+}
+.col-xs-12.col-sm-4{
+   border: none;
+   color: #fff;
+   margin-top: 0px;
+   padding: 0px;
+}
+.col-sm-4 h3{
+  font-size: 20px;
+  text-align: left;
+}
+.col-sm-4 p{
+  font-size: 15px;
+  text-align: left;
+}
+.list-group-item:hover{
+  box-shadow: 0 0 1px rgba(1, 1, 1, 1); 
+}
 
 .demo-2 {
-    position:relative;
-    height: 440px;
-    overflow:hidden;
-    background-color:#008080;
+  position:relative;
+  height: 440px;
+  overflow:hidden;
+  background-color:#008080;
 }
 .demo-2 p,.demo-2 h2 {
-    color:#fff;
-    padding:10px;    
-    top:5px;
-    position:relative
+  color:#fff;
+  padding:10px;    
+  top:5px;
+  position:relative
 }
 .demo-2 p {
-    font-family:'Lato';
-    font-size:12px;
-    line-height:18px;
-    margin:0
+  font-family:'Lato';
+  font-size:12px;
+  line-height:18px;
+  margin:0
 }
 .demo-2 h2 {
-    font-size:20px;
-    line-height:24px;
-    margin:0;
-    font-family:'Lato'
+  font-size:20px;
+  line-height:24px;
+  margin:0;
+  font-family:'Lato'
 }
 .effect img {
-    position:absolute;
-    left:0;
-    bottom:0;
-    cursor:pointer;
-    margin:-12px 0;
-    -webkit-transition:bottom .3s ease-in-out;
-    -moz-transition:bottom .3s ease-in-out;
-    -o-transition:bottom .3s ease-in-out;
-    transition:bottom .3s ease-in-out
+  position:absolute;
+  left:0;
+  bottom:0;
+  cursor:pointer;
+  margin:-12px 0;
+  -webkit-transition:bottom .3s ease-in-out;
+  -moz-transition:bottom .3s ease-in-out;
+  -o-transition:bottom .3s ease-in-out;
+  transition:bottom .3s ease-in-out
 }
 .effect img.top:hover {
     bottom:-120px;
@@ -157,7 +197,7 @@ p.zero{
   letter-spacing: 1px;
   margin-top: 15px;
 }
-.col-xs-12.col-md-4 {
+.col-md-4 {
   border: none;
 }
 .col-xs-12.col-sm-4 a{
@@ -165,4 +205,55 @@ p.zero{
 }
 .btn[role=button]{
   margin-left: 70px;
+}
+
+/* general styles */
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  color:white;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-family:rockwell;
+  letter-spacing:2px;
+  font-size: 4.5em;
+  font-weight: 700;
+  margin-bottom:30px;
+  padding: 0;  
+}
+.text-vcenter h3 {
+  letter-spacing:1px;
+  font-size:25px;
+  margin: 0;
+  padding: 0;
+  font-family:candara;
+}
+
+/* additional sections */
+#home {
+  background: url(../images/home.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 80%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
