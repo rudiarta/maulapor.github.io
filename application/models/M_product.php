@@ -23,5 +23,5 @@ class M_product extends CI_Model {
    {
      
    }
-
+}
 ?>

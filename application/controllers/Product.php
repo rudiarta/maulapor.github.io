@@ -26,8 +26,14 @@ class Product extends CI_Controller {
 		 $this->load->model('m_product');
 	 }
 
+	 public function index()
+	 {
+	 	$this->load->view('product');
+	 }
+
 	 public function tambahData()
 	 {
 
 	 }
+}
 ?>
