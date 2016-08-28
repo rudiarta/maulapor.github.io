@@ -3,8 +3,8 @@
  <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>js/jquery.mobile-1.4.5.min.css">
-  <link rel="icon" href="pic/icon.png">
-  <link href="bootsrap/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="<?php echo base_url(); ?>pic/system/icon.png">
+  <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
   <script src="<?php echo base_url(); ?>js/ie-emulation-modes-warning.js"></script>
 	<script src="<?php echo base_url(); ?>js/jquery-1.11.3.min.js"></script>
 	<script src="<?php echo base_url(); ?>js/jquery.mobile-1.4.5.min.js"></script>
@@ -26,7 +26,7 @@
 <div data-role="main" class="ui-content hidden-lg hidden-md">   	
    	<div class="ui-grid-solo">
       	<div class="ui-block-a">
-        	<img src="pic/indi.png" class="hidden-lg hidden-md" style="height:130px; width:100%;">
+        	<img src="<?php echo base_url(); ?>pic/system/indi.png" class="hidden-lg hidden-md" style="height:130px; width:100%;">
        	</div> 
   	</div>
 	<div class="ui-grid-a">
