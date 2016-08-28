@@ -205,7 +205,7 @@
 
         <div class="kotak" style=" margin-top:50px; background-color:white; float:left; margin-left:170px; padding:0;  border-radius:10px; box-shadow:0px 5px 0px 0px #eeeeee ;">
 
-        <h1 style="float:left; font-size:40px;  letter-spacing:3px; padding-top:0; margin:0px 20px 0px 20px ;"><a href="daftar.html" style="color:red; ">Daftar Disini</a></h1>
+        <h1 style="float:left; font-size:40px;  letter-spacing:3px; padding-top:0; margin:0px 20px 0px 20px ;"><a href="<?php echo base_url(); ?>product" style="color:red; ">Daftar Disini</a></h1>
       </div>
     </div>
       <!-- Tampilan untuk dekstop -->
@@ -217,7 +217,7 @@
 
         <div class="kotak" style=" margin-top:50px; background-color:white; float:left; margin-left:150px; padding:0;  border-radius:10px; box-shadow:0px 5px 0px 0px #eeeeee ;">
 
-        <h1 style="float:left; font-size:30px;  letter-spacing:2px; padding-top:0; margin:0px 20px 0px 20px ;"><a href="daftar.html" style="color:red; ">Daftar Disini</a></h1>
+        <h1 style="float:left; font-size:30px;  letter-spacing:2px; padding-top:0; margin:0px 20px 0px 20px ;"><a href="<?php echo base_url(); ?>product" style="color:red; ">Daftar Disini</a></h1>
       </div>
     </div>
       <!-- Tampilan untuk dekstop -->
@@ -229,7 +229,7 @@
 
         <div class="kotak" style=" margin-top:20px; background-color:white; float:left; margin-left:100px; padding:0;  border-radius:10px; box-shadow:0px 5px 0px 0px #eeeeee ;">
 
-        <h1 style="float:left; font-size:25px;  letter-spacing:2px; padding-top:0; margin:0px 20px 0px 20px ;"><a href="daftar.html" style="color:red; ">Daftar Disini</a></h1>
+        <h1 style="float:left; font-size:25px;  letter-spacing:2px; padding-top:0; margin:0px 20px 0px 20px ;"><a href="<?php echo base_url(); ?>product" style="color:red; ">Daftar Disini</a></h1>
       </div>
     </div>
     <!-- Tampilan untuk Tab >= 768 -->
@@ -241,7 +241,7 @@
 
         <div class="kotak" style=" margin-top:20px; background-color:white; float:left; margin-left:10px; padding:0;  border-radius:10px; box-shadow:0px 5px 0px 0px #eeeeee ;">
 
-        <h1 style="float:left; font-size:15px;  letter-spacing:2px; padding-top:0; margin:10px 10px 10px 10px ;"><a href="daftar.html" style="color:red; ">Daftar Disini</a></h1>
+        <h1 style="float:left; font-size:15px;  letter-spacing:2px; padding-top:0; margin:10px 10px 10px 10px ;"><a href="<?php echo base_url(); ?>product" style="color:red; ">Daftar Disini</a></h1>
       </div>
     </div>
     <!-- Tampilan untuk Mobile <= 768 -->
