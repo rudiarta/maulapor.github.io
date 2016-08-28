@@ -28,7 +28,7 @@ class Product extends CI_Controller {
 
 	 public function index()
 	 {
-	 	$this->load->view('product');
+	 	$this->load->view('product/index');
 	 }
 
 	 public function tambahData()
